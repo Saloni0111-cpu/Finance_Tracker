@@ -1,0 +1,145 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #282c34;
+    color: white;
+    
+    
+    height: 100vh;
+    overflow: hidden;
+}
+.navbar {
+    height: 100px;
+    background: #1393c143;
+    border-bottom: dotted #021c26a7;;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: #61dafb;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: color 0.3s;
+    font-size: 40px;
+}
+
+.navbar a:hover {
+    color: #21a1f1;
+}
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
+
+.circular-container {
+    width: 80vh;
+    height: 80vh;
+    border-radius: 40%;
+    border:dotted black;
+    background: #1393c143;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:100px;
+    margin-left: 650px;
+    margin-top: 50px;
+    opacity: 1;
+}
+
+h1 {
+    color: #61dafb;
+    margin-bottom: 20px;
+    font-size: 100px;
+}
+
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.expense-form input {
+    width: 100%;
+    max-width: 230px;
+    padding: 10px;
+    margin: 5px 0;
+    height: 50px;
+    border: 1px solid #61dafb;
+    border-radius: 4px;
+    background: #282c34;
+    color: white;
+    outline: none;
+}
+
+.expense-form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    height:50px;
+    border: none;
+    background-color: #61dafb;
+    color: #282c34;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.expense-form button:hover {
+    background-color: #28cbf9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 250px;
+}
+
+ul li {
+    padding: 10px;
+    background: #333840;
+    margin: 10px 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    transition: background 0.3s;
+}
+
+ul li:hover {
+    background: #444b54;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #61dafb;
+}

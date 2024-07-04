@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+          <source src="assets/bg3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Expense Tracker</a>
+        </div>
+        <div class="navbar-links">
+            <a href="#">Registration</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+    <div class="circular-container">
+        <h1>Expense Tracker</h1>
+        <div class="expense-form">
+            <input type="text" id="expense-name" placeholder="Expense Name">
+            <input type="number" id="expense-amount" placeholder="Amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+        <ul id="expense-list"></ul>
+        <h2>Total: $<span id="total-expense">0</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
